@@ -8,7 +8,7 @@ use Tests\TestCase;
 
 class RegisterTest extends TestCase
 {
-    public function testSuccessRegister()
+    public function test_success_register()
     {
         $payload = [
             "name" => "admin2",
@@ -23,7 +23,7 @@ class RegisterTest extends TestCase
     }
 
 
-    public function testErrorRegisterEmailExist()
+    public function test_error_register_email_exist()
     {
         $payload = [
             "name" => "admin2",
